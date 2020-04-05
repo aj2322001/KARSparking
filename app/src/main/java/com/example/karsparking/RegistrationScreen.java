@@ -2,15 +2,22 @@ package com.example.karsparking;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -26,6 +33,7 @@ public class RegistrationScreen extends AppCompatActivity {
     FirebaseAuth mFirebaseAuth;
 //    DatabaseReference reff;
     String name, email,vehicleNumber,ph,address,pwd,pwdre,vehicleType;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,51 +71,44 @@ public class RegistrationScreen extends AppCompatActivity {
                 vehicleType = vehicleTypeS.toString();
 //                reff= FirebaseDatabase.getInstance().getReference().child(email);
 
-                if(name.isEmpty()){
-                    nameet.setError("Please enter your name");
-                    nameet.requestFocus();
-                }
-                else if(email.isEmpty()){
-                    emailet.setError("Please enter your email id");
-                    emailet.requestFocus();
-                }
-                else if(vehicleNumber.isEmpty()){
-                    vehicleNoet.setError("Please enter your vehicle number");
-                    vehicleNoet.requestFocus();
-                }
-                else if(ph.isEmpty()){
-                    phoneet.setError("Please enter your phone number");
-                    phoneet.requestFocus();
-                }
-                else if(address.isEmpty()){
-                    addresset.setError("Please enter your address");
-                    addresset.requestFocus();
-                }
-                else if (pwd.isEmpty()){
-                    passwordet.setError("Please enter your password");
-                    passwordet.requestFocus();
-                }
+                    if (name.isEmpty()) {
+                        nameet.setError("Please enter your name");
+                        nameet.requestFocus();
+                    } else if (email.isEmpty()) {
+                        emailet.setError("Please enter your email id");
+                        emailet.requestFocus();
+                    } else if (vehicleNumber.isEmpty()) {
+                        vehicleNoet.setError("Please enter your vehicle number");
+                        vehicleNoet.requestFocus();
+                    } else if (ph.isEmpty()) {
+                        phoneet.setError("Please enter your phone number");
+                        phoneet.requestFocus();
+                    } else if (address.isEmpty()) {
+                        addresset.setError("Please enter your address");
+                        addresset.requestFocus();
+                    } else if (pwd.isEmpty()) {
+                        passwordet.setError("Please enter your password");
+                        passwordet.requestFocus();
+                    }
 //                else if (pwd.length() <=9){
 //                    passwordet.setError("password must be more than 8 characters");
 //                    passwordet.requestFocus();
 //                }
-                else if(pwdre.isEmpty()){
-                    passwordRechecket.setError("Please enter password again");
-                    passwordRechecket.requestFocus();
-                }
-                else if(!(pwdre.contentEquals(pwd))){
+                    else if (pwdre.isEmpty()) {
+                        passwordRechecket.setError("Please enter password again");
+                        passwordRechecket.requestFocus();
+                    } else if (!(pwdre.contentEquals(pwd))) {
                         passwordRechecket.setError("password doesn't match password");
                         passwordRechecket.requestFocus();
-                }
-                else if(vehicleType.contentEquals("Select")){
-                    ((TextView)vehicleTypeS.getSelectedView()).setError("Please enter vehicleType");
-                    vehicleTypeS.requestFocus();
-                }
+                    } else if (vehicleType.contentEquals("Select")) {
+                        ((TextView) vehicleTypeS.getSelectedView()).setError("Please enter vehicleType");
+                        vehicleTypeS.requestFocus();
+                    }
 
 //                else if(name.isEmpty() && email.isEmpty() && vehicleNumber.isEmpty() && ph.isEmpty() && address.isEmpty() && pwd.isEmpty() && pwdre.isEmpty()){
 //                    Toast.makeText(RegistrationScreen.this,"Fields Are Empty!",Toast.LENGTH_SHORT).show();
 //                }
-                else  if((!(email.isEmpty() && pwd.isEmpty()))) {
+                    else if ((!(email.isEmpty() && pwd.isEmpty()))) {
                         mFirebaseAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(RegistrationScreen.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -121,18 +122,16 @@ public class RegistrationScreen extends AppCompatActivity {
 //                                    reff.push().setValue(data);
                                     finish();
                                     startActivity(new Intent(RegistrationScreen.this, MainActivity.class));
-                                }
-                                else {
+                                } else {
                                     Toast.makeText(RegistrationScreen.this, "SignUp Unsuccessful, Please Try Again", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
-                }
-                else{
-                    Toast.makeText(RegistrationScreen.this,"Error Occurred!",Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(RegistrationScreen.this, "Error Occurred!", Toast.LENGTH_SHORT).show();
 
-                }
-            }
+                    }
+        }
         });
 
         toSignIntv.setOnClickListener(new View.OnClickListener() {

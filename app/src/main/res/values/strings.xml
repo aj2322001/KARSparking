@@ -4,4 +4,7 @@
 
     <string name="navigation_drawer_open">open navigation drawer</string>
     <string name="navigation_drawer_close">close navigation drawer</string>
+
+    <string name="google_maps_API_key">AIzaSyBgEB8w0xz5NzKQ6Ufx0nW4R5H9dHe78zo</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
