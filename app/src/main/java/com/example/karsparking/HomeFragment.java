@@ -4,8 +4,6 @@ package com.example.karsparking;
         import android.view.View;
         import android.view.ViewGroup;
         import androidx.fragment.app.Fragment;
-
-import com.example.karsparking.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
         import com.google.android.gms.maps.GoogleMap;
         import com.google.android.gms.maps.MapView;
