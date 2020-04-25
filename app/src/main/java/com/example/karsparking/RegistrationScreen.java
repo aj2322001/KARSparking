@@ -2,22 +2,13 @@ package com.example.karsparking;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
-import android.Manifest;
-import android.app.Dialog;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -31,7 +22,8 @@ public class RegistrationScreen extends AppCompatActivity {
     Button btnSignUp;
     Spinner vehicleTypeS;
     FirebaseAuth mFirebaseAuth;
-//    DatabaseReference reff;
+    FirebaseDatabase database;
+    DatabaseReference myRef;
     String name, email,vehicleNumber,ph,address,pwd,pwdre,vehicleType;
 
 
@@ -64,12 +56,10 @@ public class RegistrationScreen extends AppCompatActivity {
                 email = emailet.getText().toString();
                 vehicleNumber = vehicleNoet.getText().toString();
                 ph = phoneet.getText().toString();
-//                int phoneNumber = Integer.parseInt(ph);
                 address = addresset.getText().toString();
                 pwd = passwordet.getText().toString();
                 pwdre = passwordRechecket.getText().toString();
-                vehicleType = vehicleTypeS.toString();
-//                reff= FirebaseDatabase.getInstance().getReference().child(email);
+                vehicleType = vehicleTypeS.getSelectedItem().toString();
 
                     if (name.isEmpty()) {
                         nameet.setError("Please enter your name");
@@ -90,10 +80,10 @@ public class RegistrationScreen extends AppCompatActivity {
                         passwordet.setError("Please enter your password");
                         passwordet.requestFocus();
                     }
-//                else if (pwd.length() <=9){
-//                    passwordet.setError("password must be more than 8 characters");
-//                    passwordet.requestFocus();
-//                }
+                    else if (pwd.length() <=9){
+                        passwordet.setError("password must be more than 8 characters");
+                        passwordet.requestFocus();
+                    }
                     else if (pwdre.isEmpty()) {
                         passwordRechecket.setError("Please enter password again");
                         passwordRechecket.requestFocus();
@@ -113,13 +103,16 @@ public class RegistrationScreen extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-//                                    dataStorage data = new dataStorage();
-//                                    data.setName(name);
-//                                    data.setPh(ph);
-//                                    data.setAddress(address);
-//                                    data.setVehicleType(vehicleType);
-//                                    data.setVehicleNumber(vehicleNumber);
-//                                    reff.push().setValue(data);
+                                    database = FirebaseDatabase.getInstance();
+                                    myRef = database.getReference("USER");
+                                    dataStorage data = new dataStorage();
+                                    data.setName(name);
+                                    data.setPh(ph);
+                                    data.setEmail(email);
+                                    data.setAddress(address);
+                                    data.setVehicleType(vehicleType);
+                                    data.setVehicleNumber(vehicleNumber);
+                                    myRef.push().setValue(data);
                                     finish();
                                     startActivity(new Intent(RegistrationScreen.this, MainActivity.class));
                                 } else {

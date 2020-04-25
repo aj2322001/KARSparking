@@ -1,7 +1,10 @@
 package com.example.karsparking;
 
+import android.location.Geocoder;
+
 public class dataStorage {
     private String name, email,vehicleNumber,ph,address,pwd,pwdre,vehicleType;
+    Geocoder geocoder;
 
     public dataStorage(){}
 
@@ -67,5 +70,13 @@ public class dataStorage {
 
     public void setVehicleType(String vehicleType) {
         this.vehicleType = vehicleType;
+    }
+
+    public Geocoder getGeocoder() {
+        return geocoder;
+    }
+
+    public void setGeocoder(Geocoder geocoder) {
+        this.geocoder = geocoder;
     }
 }
