@@ -2,9 +2,10 @@ package com.example.karsparking;
 
 import android.location.Geocoder;
 
+import com.google.android.gms.maps.model.LatLng;
+
 public class dataStorage {
     private String name, email,vehicleNumber,ph,address,pwd,pwdre,vehicleType;
-    Geocoder geocoder;
 
     public dataStorage(){}
 
@@ -72,11 +73,4 @@ public class dataStorage {
         this.vehicleType = vehicleType;
     }
 
-    public Geocoder getGeocoder() {
-        return geocoder;
-    }
-
-    public void setGeocoder(Geocoder geocoder) {
-        this.geocoder = geocoder;
-    }
 }

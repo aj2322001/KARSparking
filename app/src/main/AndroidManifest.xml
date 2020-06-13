@@ -37,7 +37,9 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RegistrationScreen" />
-        <activity android:name=".Login">
+        <activity android:name=".Login"/>
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

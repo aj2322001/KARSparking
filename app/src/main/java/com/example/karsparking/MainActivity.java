@@ -9,6 +9,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -25,14 +27,19 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,13 +48,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActionBarDrawerToggle toogle;
 
     private FusedLocationProviderClient mfusedLocationProviderClient;
+    private LocationRequest locationRequest;
+    private LocationCallback locationCallback;
 
     private boolean mLocationPermissionGranted = false;
     private static final String TAG = "MainActivity";
-    public static  double lat,lng;
+    public static double[] currentLocation = new double[2];
+    private static  double lat,lng;
     private GoogleMap mGoogleMap;
-    FirebaseDatabase database;
-    DatabaseReference myRef;
     private static final int ERROR_DIALOG_REQUEST = 9001;
     private static final int PERMISSIONS_REQUEST_ENABLE_GPS = 9002;
     private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 9003;
@@ -58,7 +66,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
         mfusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-//        mDb = FirebaseFirestore.getInstance();
 
         toolbar = findViewById(R.id.toolbar);
         drawer = findViewById(R.id.drawer_layout);
@@ -82,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 //get last known location
-    public void getLastKnownLocation(){
+    public double[] getLastKnownLocation(){
         mfusedLocationProviderClient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
             @Override
             public void onComplete(@NonNull Task<Location> task) {
@@ -97,10 +104,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                                 lng = (double)user.get(0).getLongitude();
                                 Log.d(TAG,"onComplete : latitude : "+lat);
                                 Log.d(TAG,"onComplete : longitude : "+lng);
-                            database = FirebaseDatabase.getInstance();
-                            myRef = database.getReference("USER Location");
-                            dataStorage data = new dataStorage();
-                            data.setGeocoder(geocoder);
+                                currentLocation[0]= lat;
+                                currentLocation[1]= lng;
+
+                            Fragment homeFragment = new HomeFragment();
+                            Bundle bundle = new Bundle();
+                            bundle.putString("CurrentLatitude",Double.toString(currentLocation[0]));
+                            bundle.putString("CurrentLongitude",Double.toString(currentLocation[1]));
+                            homeFragment.setArguments(bundle);
+                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+                            Log.d(TAG,"onComplete : currentLocL : "+ Arrays.toString(currentLocation));
                         }
                         catch (Exception e){
                             e.printStackTrace();
@@ -108,8 +121,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             }
         });
+        Log.d(TAG,"onComplete : currentLoc : "+ Arrays.toString(currentLocation));
+        return currentLocation;
     }
 
+    public Toolbar getToolbar() {
+        return toolbar;
+    }
+
+    public void setToolbar(Toolbar toolbar) {
+        this.toolbar = toolbar;
+    }
+
+    public static double getLat() {
+        return lat;
+    }
+
+    public static void setLat(double lat) {
+        MainActivity.lat = lat;
+    }
+
+    public static double getLng() {
+        return lng;
+    }
+
+    public static void setLng(double lng) {
+        MainActivity.lng = lng;
+    }
 
     //maps permissions
     private boolean checkMapServices(){
