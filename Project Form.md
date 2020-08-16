@@ -47,7 +47,8 @@ On the software side of things this project requires the knowledge of Java, Andr
 Not done
 
 ## Short and long term planning with detailed and logical steps and timelines. You may upload a Time Chart also
-Not done
+our Short term goal is to make an application for vehicle owners where we will be able to find parking places nearby or where we will be able to search for parking places and will be able to book slots. and one application for parking space owners where they will receive bookings and information about the vehicle owner, this application will also help them to manage their parking spots in a better way. here we want to complete our project in the allotted time of four months with full dedication.
+our long term goal is to add calling and chatting feature through which vehicle owners and parking space owners will be able to interact and we will also try to introduce online UPI payments through which they will be provided with the option to pay on the go and will receive extra time form what they get when they choose to pay through cash if they are late by any chance. if we will be able to upload our application "KARS Parking" in the google play store successfully with positive reviews we will consider it as an award.
 
 ## Evidence/literature/research/survey etc. in support of the hypothesis or idea to be successful. (Local/National/International Context)
 Not done
