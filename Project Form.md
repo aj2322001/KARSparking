@@ -55,7 +55,7 @@ Not done
 Do it yourself.
 
 ## List down the Ethics, Privacy, Moral and Legal issues related with the project 
-Not done
+while making our application we tried to keep our application "KARS Parking" away from all types of legal and copyright issues, we made everything on our own including our application icon, application name. for privacy policies also we made our own registration and login system so that data of our application users can not be misused. As per our plans, no funding will be required for test versions but for a proper release version funds will be required to rent services of both Google Maps API and Firebase.
 
 
 
