@@ -57,7 +57,7 @@ One of the major problem that any new app faces is its lack of popularity especi
 
 Another major hurdle on an organisational level would be to have proper communication regarding the project and keep track of each member's progress as we will not be able to meet whenever we want due to the pandemic situation. We would have to plan meetings in advance and have to make them as efficient as possible.
 
-Given the nature of software development it is natural to have bugs in the early versions of software. A nasty bug can cause crashes or unexpected behaviour overall. Proper testing is necessary to ensure that such disasters do not happen.
+Given the nature of software development it is natural to have bugs in the early versions of software. A nasty bug can cause crashes or unexpected behavior overall. Proper testing is necessary to ensure that such disasters do not happen.
 
 ## Give Names and emails of Three Persons with whom you have discussed the details of the project and what was their reaction/suggestion.
 Do it yourself.
