@@ -37,7 +37,7 @@ Not done
 We will add a feedback module to our application and according to the comments of the users, we plan to keep a check on the quality of the application. As far as the success of the project is concerned we can see the number of people who downloaded this application which in turn will help us to keep a check on the quality. We are also planning to upload the application on the Google Play Store, if we get a good rating then we will consider our project a success. We will try to add new features as often as we can and will also try to make the application the best version of itself.
 
 ## Resources required for the project and the feasibility of their availability as per the plans
-Not done
+On the software side of things this project requires the knowledge of Java, Android Studio,Room,Firebase,Google Maps. We will develop the basic UI and functionality of the app using Android Studio and Java. Google Maps API for android is required to find current location of the user and display nearby parking spots. For storing information such as login, user preferences etc. we will use Firebase and Room. As per our plans no funding will be required for test versions but for a proper release version funds will be required to rent services of both Google Maps API and Firebase. 
 
 ## If you are a team of 2 or more then clearly define responsibilities and how each member should be assessed differently
 Not done
