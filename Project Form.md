@@ -28,7 +28,11 @@ We are making one application for parking space owners also where they will be n
 3)  India needs more parking spaces but who is going to provide them? Providing parking space is not a popular business avenue in our country which is the reason for the lack of parking spaces in the first place. One of the biggest reasons for that is there is no convenient way for customers to find such locations unless the parking owner spends ludicrous amounts of money in advertisement. Our app is not only going to solve the customer's problem but it will also solve the parking owner's problem. Using our app parking lot owners can list their parking lots on the app and customers parking nearby can use their services. It's a win-win situation for both consumers and service providers.
 
 ## How it will be different from similar existing solutions
-Not done
+1) Google Maps - After searching on the play store I found that nearest related existing solutions to our project is Google Maps, were it has one feature where we can find nearby parking spaces and also save parking location but for now it does not provide any feature for booking a parking slot and something that will help parking space owners to control their parking spots and get each and every necessary information about the car owners right. so here it is a huge gap that our project is going to fill.
+
+2)Smart Community Parking: Sharing Parking locations - This application is community based, that is, it does not deal with paid parking spots. It uses the random spaces where there is no "NO PARKING" zones which are marked on the google maps. This application is an intermediate between two costumers. Our application finds a space owned by a specific person who gets paid for letting our costumer use his land for parking the costumer's vehicle.
+
+3) Park+ Discover and book the best parking spots - this application is the closest of all three to our application. Our application will involve two parties, first, the costumer and second, the land owners. But the Park+ application is different from KARS Parking in this aspect, as they are only considering the costumer aspect.
 
 ## What makes it challenging enough to be chosen to be done in four months (Aug-Nov) 
 Not done
@@ -49,7 +53,11 @@ Not done
 Not done
 
 ## Risk Analysis (What are the factors which pose risk of failure of your project and risk of not completing your project by deadline) 
-Not done
+One of the major problem that any new app faces is its lack of popularity especially if it doesn't have a huge marketing fund. Since hundreds of new apps release everyday on app store it's difficult for any app to get noticed. 
+
+Another major hurdle on an organisational level would be to have proper communication regarding the project and keep track of each member's progress as we will not be able to meet whenever we want due to the pandemic situation. We would have to plan meetings in advance and have to make them as efficient as possible.
+
+Given the nature of software development it is natural to have bugs in the early versions of software. A nasty bug can cause crashes or unexpected behaviour overall. Proper testing is necessary to ensure that such disasters do not happen.
 
 ## Give Names and emails of Three Persons with whom you have discussed the details of the project and what was their reaction/suggestion.
 Do it yourself.
