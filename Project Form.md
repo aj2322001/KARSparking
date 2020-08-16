@@ -52,7 +52,7 @@ Not done
 Not done
 
 ## Give Names and emails of Three Persons with whom you have discussed the details of the project and what was their reaction/suggestion.
-Not done
+Do it yourself.
 
 ## List down the Ethics, Privacy, Moral and Legal issues related with the project 
 Not done
