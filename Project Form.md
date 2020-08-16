@@ -21,5 +21,5 @@ We are making an application KARS Parking to Find a car parking space in most me
 it will help vehicle owners to find parking slots according to their relevant prizes and distances. here they will also be able to book their parking slots online
 We are making one application for parking space owners also where they will be notified whenever there is a booking made and they will also be able to control the number of vehicles they want to allow.
 
-##What problem it solves?
+## What problem it solves?
 Our KARS Parking application is mainly solving the issues related to parking of vehicles. As we all know that due to the huge population of cities like Delhi, Kolkata, Mumbai, etc. there is a need for parking spaces in these cities. According to a survey in 2017-18 that was conducted in Delhi, there are 556 motor vahicles per one thousand people. This is a serious situation as space is finite but the no. of vehicles are increasing per year. Therefore, there is need for efficient parking plans which we are aiming for through our application.
