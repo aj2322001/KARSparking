@@ -35,7 +35,14 @@ We are making one application for parking space owners also where they will be n
 3) Park+ Discover and book the best parking spots - this application is the closest of all three to our application. Our application will involve two parties, first, the costumer and second, the land owners. But the Park+ application is different from KARS Parking in this aspect, as they are only considering the costumer aspect.
 
 ## What makes it challenging enough to be chosen to be done in four months (Aug-Nov) 
-Not done
+Firstly,we are planning to make a hardware project but due to Covid we have to with app .As we all are
+new to Android so it will take us a month to learn and understand it from scratch.Discussing the idea with teachers,
+and friends ,their suggestions was time taking job.From creating login page to full working app,we have to  lot of challenges in adding features 
+like gps,slot management etc.We have to make two apps ,one for the user and other for parking owner,so 
+we have divided the task accordingly.As login and sign up page are common in both the apps,so it would give us some time to work on other parts of the app.Also the slot booking 
+and to manage the records was challenging.We have to maintain  both project and academics simultaneously.
+Secondly,it will take about three and a half months to complete the whole project .It is worth doing as we will get
+some knowledge about android,how apps work,how their databases works.
 
 ## How you will measure the success/outcome/quality of your project 
 We will add a feedback module to our application and according to the comments of the users, we plan to keep a check on the quality of the application. As far as the success of the project is concerned we can see the number of people who downloaded this application which in turn will help us to keep a check on the quality. We are also planning to upload the application on the Google Play Store, if we get a good rating then we will consider our project a success. We will try to add new features as often as we can and will also try to make the application the best version of itself.
@@ -44,7 +51,10 @@ We will add a feedback module to our application and according to the comments o
 On the software side of things this project requires the knowledge of Java, Android Studio,Room,Firebase,Google Maps. We will develop the basic UI and functionality of the app using Android Studio and Java. Google Maps API for android is required to find current location of the user and display nearby parking spots. For storing information such as login, user preferences etc. we will use Firebase and Room. As per our plans no funding will be required for test versions but for a proper release version funds will be required to rent services of both Google Maps API and Firebase. 
 
 ## If you are a team of 2 or more then clearly define responsibilities and how each member should be assessed differently
-Not done
+We are a group of four,so we have divided the work accordingly.Archit Joshi(E19CSE155) and Shantanu Bhardwaj(E19CSE180) both are working
+on vehicle's owner app.While Archit will design app's interface and connecting app to gps system .Shantanu is tasked to link both the apps and to add
+ , chatting feature, slot booking part. Kaustubh Joshi(E19CSE123) will be managing data.He will be working on creating database and storing ,retrieving the same. Rishi Mehta(E19CSE267) will be working on master's app.He will design master's app interface and to make a slot giving system to the user
+through parking owner's app.
 
 ## Short and long term planning with detailed and logical steps and timelines. You may upload a Time Chart also
 our Short term goal is to make an application for vehicle owners where we will be able to find parking places nearby or where we will be able to search for parking places and will be able to book slots. and one application for parking space owners where they will receive bookings and information about the vehicle owner, this application will also help them to manage their parking spots in a better way. here we want to complete our project in the allotted time of four months with full dedication.
