@@ -71,7 +71,9 @@ Another major hurdle on an organisational level would be to have proper communic
 Given the nature of software development it is natural to have bugs in the early versions of software. A nasty bug can cause crashes or unexpected behavior overall. Proper testing is necessary to ensure that such disasters do not happen.
 
 ## Give Names and emails of Three Persons with whom you have discussed the details of the project and what was their reaction/suggestion.
-Do it yourself.
+First,We discussed our project idea with our mentor Gaurav Singal(gaurav.singal@bennett.edu.in) sir. He appreciated our idea, told us that it has potential to be a great project and  suggested  to add some features that will make our project more presentable .
+then, we shared our project details with an industrialist currently working in JUSPAY Naman Kalkhuria(naman.kalkhuria@juspay.in). his words on our project were "It's nice to know that students are comming up with these type of ideas, after seeing their prototype. I was really impressed, just stay dedicated and come up with the best you can."
+  do the parent's reaction on your own
 
 ## List down the Ethics, Privacy, Moral and Legal issues related with the project 
 while making our application we tried to keep our application "KARS Parking" away from all types of legal and copyright issues, we made everything on our own including our application icon, application name. for privacy policies also we made our own registration and login system so that data of our application users can not be misused. As per our plans, no funding will be required for test versions but for a proper release version funds will be required to rent services of both Google Maps API and Firebase.
