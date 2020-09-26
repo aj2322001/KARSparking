@@ -1,5 +1,57 @@
+---
+## Form 2
 
-## ---------------------------------
+## User Interface Design
+Salient Points/ How it meets the characteristics of User-Centered Design etc. ( Minimum 500 character and maximum 1000 character and at least 4 figures of the User interface or other related figures of your project) This Question Carries Two Mark.
+
+(Rishi's part)
+
+## Upload a User Centered Design File. This is part of above question.(You are supposed to upload a single file, If you have multiple files then merge them into a single file and then upload.)
+
+(Rishi's part)
+
+## Potential User Feedback
+This feedback should be collected from potential user in person or by phone. Potential User 1 Feedback: Potential User 2 Feedback: Potential User 3 Feedback: Potential User 4 Feedback: Potential User 5 Feedback: At least 50 words for each feedback This Question Carries One Mark.
+
+(Rishi's part)
+
+## Design Documents: (Overall Block Diagram/ Data Flow Diagram/ Architecture Diagram/ Solution Diagram, UML Diagram etc.) (As Applicable) . Please write Minimum 500 and Maximum 1000 Characters.This Question Carries Three Mark. 
+
+## Upload a Design Document File. This is part of above question.(You are supposed to upload a single file, If you have multiple files then merge them into a single file and then upload.) 
+
+## Ethical and legal/privacy/terms and conditions 
+Actual Text of such issues that will be put before the user to agree. Please write minimum 5000 and maximum 10000 Characters. This Question Carries Three Mark.
+
+## feasibility study/ Business Context of the idea/ Monetization/ Opportunity Analysis 
+Please write Minimum 1000 Maximum 2000 Characters. This Question Carries two Mark.
+
+## Project cost estimation
+Please write the estimated cost that your project required in 3 years or completion of the project. A cost estimate is a summation of all the costs involved in successfully finishing a project, from inception to completion (project duration). Common types of expenses include Labor, Materials, Equipment, Services, Software, Hardware. Please write Minimum of 500 Maximum 1000 Characters. This Question Carries one Mark.
+
+## Partial Implementation/ Draft Code
+Give Link of Github or any other public Repository/ Web Link/URL where your partial code is available to see. Minimum 25% of the code should be declare in this answer. This Question Carries Three Marks.
+
+## Week wise Updates/ Diary/ Proportional achievement of stated outcomes/ Graded Functionality etc 
+( At least 300 characters in each week) Week 1 Week 2 Week 3 Week 4 Week 5 Week 6 Week 7 Week 8 This Question Carries Two Marks. 
+
+## Week Wise Plan for the remaining time to complete the Project
+( At least 300 Character in each week) Week 9 Week 10 Week 11 Week 12  This Question Carries Two Mark.
+
+## One Impressive Post on LinkedIn regarding your Project
+( At least 300 Characters and one Image and 5 hashtags).This Question Carries one Mark.
+
+## Is your idea/Project/Product is applicable for patent? If Yes then, Why do you think it can be submitted for patent? How do you plan to proceed for Patent? (Even if your answer is no, explain why do you think it cannot be submitted for patent? (Minimum 300 characters maximum 1000, this question carry 1 Mark)
+
+## Discuss your Project with at least three students of your senior batches of Bennett University and ask them how they rate your project from 1 to 10 scale. Write all three name, Roll No, email and Mobile No of those students. They should be ready to confirm if they are called on their mobile number
+(At least 200 Character feedback from each of them, Positive or negative feedback will not determine the marks but the quality of the feedback will) This question carry 2 Mark. 
+
+## Discuss your project with Two Persons outside the Bennett University (apart from your family members and preferably from industry.) and and ask them how they rate your project and its progress from 1 to 10 scale. Write both names, who they are, email and Mobile No of those. They should be ready to confirm if they are called on their mobile number.
+(1+1 mark for each of two).( At least 200 Characters feedback from each of them, Positive or negative feedback will not determine the marks but the quality of the feedback will)
+
+---
+
+## Form 1
+
 ## Project Title
 KARS Parking
 
