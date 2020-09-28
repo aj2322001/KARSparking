@@ -26,7 +26,7 @@ Actual Text of such issues that will be put before the user to agree. Please wri
 Please write Minimum 1000 Maximum 2000 Characters. This Question Carries two Mark.
 
 ## Project cost estimation
-As we are in the developing stage of our semester project 'kars parking' which is only a software-based application so we do not have to spend money for now but when our application grows bigger and the number of users increases, there will be some nominal charges that the users will have to pay. The user would pay for the services like Google's database service i.e. firebase; we are using it for user's authentication and also for storing their data, Google Maps API for using google map in our application. while publishing our application on Google play store we will have to pay some charges.
+As we are in the developing stage of our semester project 'kars parking' which is only a software-based application, we do not have to spend money for now but when our application grows bigger and the number of users increases, there will be some nominal charges that the users will have to pay. The user would pay for the services like Google's database service i.e. firebase; we are using it for user's authentication and also for storing their data, Google Maps API for using google map in our application. While publishing our application on Google play store we will have to pay some charges.
 
 ## Partial Implementation/ Draft Code
 Give Link of Github or any other public Repository/ Web Link/URL where your partial code is available to see. Minimum 25% of the code should be declare in this answer. This Question Carries Three Marks.
