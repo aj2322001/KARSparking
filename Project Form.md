@@ -26,7 +26,7 @@ Actual Text of such issues that will be put before the user to agree. Please wri
 Please write Minimum 1000 Maximum 2000 Characters. This Question Carries two Mark.
 
 ## Project cost estimation
-Please write the estimated cost that your project required in 3 years or completion of the project. A cost estimate is a summation of all the costs involved in successfully finishing a project, from inception to completion (project duration). Common types of expenses include Labor, Materials, Equipment, Services, Software, Hardware. Please write Minimum of 500 Maximum 1000 Characters. This Question Carries one Mark.
+(Archit's part)
 
 ## Partial Implementation/ Draft Code
 Give Link of Github or any other public Repository/ Web Link/URL where your partial code is available to see. Minimum 25% of the code should be declare in this answer. This Question Carries Three Marks.
