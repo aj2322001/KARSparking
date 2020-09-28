@@ -2,7 +2,16 @@
 ## Form 2
 
 ## User Interface Design
-Salient Points/ How it meets the characteristics of User-Centered Design etc. ( Minimum 500 character and maximum 1000 character and at least 4 figures of the User interface or other related figures of your project) This Question Carries Two Mark.
+1) Ease of use 
+We have kept the user interface easy to use on both apps. The menu is easy to find. The moment the user starts the app, the user can find the menu. In the KARS parking app, we implemented the menu using a Navigation drawer. In the KARS masters app, the menu is on the main layout as there were more items on the menu.
+
+2) Simple and Natural dialog
+The dialog boxes and UI items have been written in natural language so that the user doesn't get confused.
+
+3) Design for the users and their tasks
+
+In the case of KARS parking, the users are those who want to park cars. So our design is similar to most service providing apps. There is a login for users so the service providers can identify them. The main screen consists of selecting the parking location and a payment system.
+
 
 (Rishi's part)
 
