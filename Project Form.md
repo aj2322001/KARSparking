@@ -12,17 +12,26 @@ The dialog boxes and UI items have been written in natural language so that the 
 
 In the case of KARS parking, the users are those who want to park cars. So our design is similar to most service providing apps. There is a login for users so the service providers can identify them. The main screen consists of selecting the parking location and a payment system.
 
-
-(Rishi's part)
-
 ## Upload a User Centered Design File. This is part of above question.(You are supposed to upload a single file, If you have multiple files then merge them into a single file and then upload.)
 
 (Rishi's part)
 
 ## Potential User Feedback
-This feedback should be collected from potential user in person or by phone. Potential User 1 Feedback: Potential User 2 Feedback: Potential User 3 Feedback: Potential User 4 Feedback: Potential User 5 Feedback: At least 50 words for each feedback This Question Carries One Mark.
+Tarun Lunia(+91 90167 20465): (For KARS Parking) Very easy to use login and registration screen but the layout for registration screen can be improved.
+(For KARS master) Nice layout. Just a little alignment is necessary and colorful icon for UI.
 
-(Rishi's part)
+Ravi Singh(+91 98178 28695):(For both apps) It's a good idea to make an app for both customers as well as car owners. This app would help the car owner to track the record of the user in an effective manner. The interface is easy and simple which is good.
+
+Shrey Aggarwal(+91 79839 98829): (For KARS Parking) If this idea is implemented then this would be amazing.
+It would free the unnecessary traffic created due to cars standing on the road due to the lack of parking space. The user interface is clean and clutter-free but it lacks polish. 
+
+Umar(+91 82475 76392): The idea is very good especially for our population-dense nation. I like the layout of the owner's app. Everything that the user wants is visible at once. Still, the UI needs more polish. I also like the design of the app for normal users.
+
+Vivan Singh(+91 96028 83330): The app idea has potential if it is implemented properly. 
+(For KARS Parking) I like how after login, the app directly opens the map. I don't like apps that waste my time, where I would have to go through multiple unnecessary menus.
+
+(For KARS master) Navigating through the menu is very intuitive. The biggest strength of the menu is it is not intimidating to use even for first-time users.
+
 
 ## Design Documents: (Overall Block Diagram/ Data Flow Diagram/ Architecture Diagram/ Solution Diagram, UML Diagram etc.) (As Applicable) . Please write Minimum 500 and Maximum 1000 Characters.This Question Carries Three Mark. 
 
@@ -41,10 +50,88 @@ As we are in the developing stage of our semester project 'kars parking' which i
 Give Link of Github or any other public Repository/ Web Link/URL where your partial code is available to see. Minimum 25% of the code should be declare in this answer. This Question Carries Three Marks.
 
 ## Week wise Updates/ Diary/ Proportional achievement of stated outcomes/ Graded Functionality etc 
-( At least 300 characters in each week) Week 1 Week 2 Week 3 Week 4 Week 5 Week 6 Week 7 Week 8 This Question Carries Two Marks. 
+Week 1(1/8/2020-7/8/2020)-
+Firstly we formed  into a team of four (Archit, Rishi, Kaustubh and Shantanu).Then we decided to make an app as due 
+to Covid, it was difficult for us to work on project related to hardware like drone and as we have a common 
+interest in Android Application.But we were not sure about the idea to implement.So,we researched about it on 
+different websites and came up with the idea of parking cars as it is similar to Bookmyshow.
+ 
+Week 2 (8/8/2020-14/8/2020)-
+We were agreed to work on the areas of android app that we were interested in more and divided work accordingly.
+Archit took user's app,Rishi took parking owner's app,Shantanu goes with database of user's app and Kaustubh took 
+back end of parking owner's app and GPS location of the parking place.We discussed the idea with Gaurav Singhal Sir 
+in our first class of design and thinking ,and he liked the idea very much.
+
+Week 3(15/8/2020-21/8/2020)-
+We started working on first form of Design and Thinking project and slowed our speed on researching about project 
+implementation as we were approaching towards the deadline of the same.We have learned new things about Android 
+Studio and learned to implement them like working with GPS,storing real-time data in database,retrieving data and 
+much more.We hope that we could complete our research on our specified areas by the next week. 
+
+Week 4(22/8/2020-29/8/2020)-
+We have completed our research on  the areas chosen by each member.We asked to our 4th year senior to  give his 
+opinion and ideas to add different features .We are looking forward to start working on the app in the upcoming weeks.
+Once again,we talked to Gaurav Sir about the project and how to start the work on the app.Hope we could make the 
+layout of the app by the next week.
+
+Week 5 (20/8/2020-6/9/2020)-
+
+Firstly on Thursday(3/9/2020), we conducted a meeting on Zoom to plan the project execution , 
+discussed ideas and about adding new features.Researched about storing current
+location of parking owner , navigation window ,discussed about the layout of Login and Registration 
+page and interface of parking owner's app with Gaurav Singhal Sir and to our seniors.
+
+Week 6 (7/9/2020-13/9/2020)-
+Successfully created login and registration page for user's app and connected the app to database using firebase.
+Started working on navigation window and user's location.
+Though ,We have not progressed much in parking owner's app just done with the layout of login page in 
+android studio,due to some error in .gradle file,we are behind the schedule. 
+Hope we can cover in forthcoming week. 
+
+Week 7(14/9/2020-20/9/2020)-
+Successfully added navigation window and location through GPS in user's app .
+Started working on main layout of user's app.Successfully created layout  of parking owner's app ,
+registration page and done with layout of user's app.Hope we can complete the layout of user's app , 
+parking owner's app in next week and start working on firebase in the month of october.
+
+Week 8(21/9/2020-27/9/2020)-
+Created layout of parking owner's registration page ,login page in previous week and connected the app to firebase .
+Different activity has also been created for parking owner's app.
+As we are approaching to the deadline of form second ,we have slowed our speed of work.From next week,
+we will start working on back end. Hope we can finish our project by the end of October.
+
 
 ## Week Wise Plan for the remaining time to complete the Project
-( At least 300 Character in each week) Week 9 Week 10 Week 11 Week 12  This Question Carries Two Mark.
+Week 9(28/9/2020-4/10/2020)-
+
+We are almost done with making the user's app and done with layout of the 
+parking owner's app.From this week ,we will start working on back end,Kaustubh 
+would work on parking owner's app database and Shantanu will work on user's app 
+database.For the whole October, we would work on back end as it is the last part 
+of our project.After that we would test our app,if there will be any flaws or error,
+we would try to remove them.
+
+Week 10(5/10/2020-11/10/2020)-
+
+Shantanu will work on storing information of user in database through registration 
+and login page. Kaustubh will work on storing information of parking owner in 
+database through login and registration page.Hope we could start working on storing 
+booking,payment ,save slot data of user's app and view user,view feedback,view 
+payment of user's of parking owner's app.
+
+Week 11(12/10/2020-18/10/2020)-
+We would be done with storing information of user in database through registration 
+and login page and  storing information of parking owner in database through login 
+and registration page.By the next week,we would complete our app by connecting two 
+apps through database so that our apps would work in real time and if we would get 
+any error ,we would try to remove it and complete our project.
+
+Week 12(19/10/2020-25/10/2020)-
+We would be done with connecting the two apps,and would check if there is any error 
+or flaw in our app.We would try to remove it and final check the working of the apps.
+If there any feature to be added later,we find it important would add before the 
+final showcase of the project in December.Otherwise ,the project would be completed 
+by the end of October or the first week of December.
 
 ## One Impressive Post on LinkedIn regarding your Project
 ( At least 300 Characters and one Image and 5 hashtags).This Question Carries one Mark.
