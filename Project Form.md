@@ -14,7 +14,7 @@ In the case of KARS parking, the users are those who want to park cars. So our d
 
 ## Upload a User Centered Design File. This is part of above question.(You are supposed to upload a single file, If you have multiple files then merge them into a single file and then upload.)
 
-(Rishi's part)
+
 
 ## Potential User Feedback
 Tarun Lunia(+91 90167 20465): (For KARS Parking) Very easy to use login and registration screen but the layout for registration screen can be improved.
@@ -34,8 +34,12 @@ Vivan Singh(+91 96028 83330): The app idea has potential if it is implemented pr
 
 
 ## Design Documents: (Overall Block Diagram/ Data Flow Diagram/ Architecture Diagram/ Solution Diagram, UML Diagram etc.) (As Applicable) . Please write Minimum 500 and Maximum 1000 Characters.This Question Carries Three Mark. 
+In "KARS" parking app,at first,user has to login in into his account(if his account already been created before) otherwise he has to register himself .After that he would be automatically directed to a page where he would be asked to enable his GPS location so that  Google maps can show nearby parking places.After selecting the parking place,he would be asked to book parking slots if available otherwise a message will pop up showing "Parking is full".If booking confirmed then he would be directed to payment page.After paying online,a message will pop up showing booking confirmed,user now can log out from account.
+
+In "Master" app,at first parking owner has to login into his account(if his account already been created before) otherwise he has to register himself .After that he would be directed to a page showing different icons where he is allowed to see user,could view feedback,could add slots etc.All these information would be in database.Owner can log out account anytime.
 
 ## Upload a Design Document File. This is part of above question.(You are supposed to upload a single file, If you have multiple files then merge them into a single file and then upload.) 
+
 
 ## Ethical and legal/privacy/terms and conditions 
 TERMS OF USE
@@ -204,10 +208,14 @@ posted by Archit (https://www.linkedin.com/posts/archit-joshi-364193194_android-
 
 ## Is your idea/Project/Product is applicable for patent? If Yes then, Why do you think it can be submitted for patent? How do you plan to proceed for Patent? (Even if your answer is no, explain why do you think it cannot be submitted for patent? (Minimum 300 characters maximum 1000, this question carry 1 Mark)
 Our KARS Parking application is not applicable for patent filing because our application is not the first of it's kind and deals with the same problem of finding the parking for costumer's
-respective vehicles. The difference is only in the execution part of our application because we are interacting with the costumers in a different way.
+respective vehicles. The difference is only in the execution part of our application because we are interacting with the customers in a different way.
 
 ## Discuss your Project with at least three students of your senior batches of Bennett University and ask them how they rate your project from 1 to 10 scale. Write all three name, Roll No, email and Mobile No of those students. They should be ready to confirm if they are called on their mobile number
-(At least 200 Character feedback from each of them, Positive or negative feedback will not determine the marks but the quality of the feedback will) This question carry 2 Mark. 
+Pranav Bansal(+91 90017 11969,PB9944@bennett.edu.in,PB9944): I will give the apps a score of 8. The idea is good and the execution is also good. The UI is easy to navigate in both apps. The major problem for the app in its current state is its lack of polish. The app still looks a little amateurish.
+
+Uday Agrawal(+91 93105 76691,UA7357@bennett.edu.in,UA7357): The idea is good but, I do not like the idea of having two apps to manage customers and parking owners. If both the apps could have been combined then it would have been better. The layout of the registration screen can be improved. I will give the apps a score of 7.
+
+Vihan Tyagi(+91 9971240137,E17CSE135@bennett.edu.in,E17CSE135): The app idea is good, still many improvements can be made. The layouts of both the apps are fine, but if some animations are added then the apps will look more professional. I will give the apps a score of 7.
 
 ## Discuss your project with Two Persons outside the Bennett University (apart from your family members and preferably from industry.) and and ask them how they rate your project and its progress from 1 to 10 scale. Write both names, who they are, email and Mobile No of those. They should be ready to confirm if they are called on their mobile number.
 (1+1 mark for each of two).( At least 200 Characters feedback from each of them, Positive or negative feedback will not determine the marks but the quality of the feedback will)
