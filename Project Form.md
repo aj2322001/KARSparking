@@ -87,7 +87,7 @@ e19cse123@bennett.edu.in
 e19cse267@bennett.edu.in
 e19cse180@bennett.edu.in
 
-## feasibility study/ Business Context of the idea/ Monetization/ Opportunity Analysis 
+## Feasibility study/ Business Context of the idea/ Monetization/ Opportunity Analysis 
 As we are developing a software-based application we will not be spending a large amount of money in the future also. Currently, we are in the developing stage of our project that is we don't have potential users, for now. So we don't have to spend money but when our application grows bigger and the number of users increases, there will be some nominal charges that we will have to pay. We would pay for the services like Google's database service i.e. firebase, Google Maps API. While publishing our application on Google play store we will have to pay some charges.
 
 Our project focuses on the difficulty faced by vehicle owners while finding parking spaces and also the landowners who face difficulty managing the parking places. The thing that everyone knows but doesn't have the solution.
@@ -203,6 +203,8 @@ Gaurav Singal
 posted by Archit (https://www.linkedin.com/posts/archit-joshi-364193194_android-bennett-project-activity-6716640254616576000-b3CH)
 
 ## Is your idea/Project/Product is applicable for patent? If Yes then, Why do you think it can be submitted for patent? How do you plan to proceed for Patent? (Even if your answer is no, explain why do you think it cannot be submitted for patent? (Minimum 300 characters maximum 1000, this question carry 1 Mark)
+Our KARS Parking application is not applicable for patent filing because our application is not the first of it's kind and deals with the same problem of finding the parking for costumer's
+respective vehicles. The difference is only in the execution part of our application because we are interacting with the costumers in a different way.
 
 ## Discuss your Project with at least three students of your senior batches of Bennett University and ask them how they rate your project from 1 to 10 scale. Write all three name, Roll No, email and Mobile No of those students. They should be ready to confirm if they are called on their mobile number
 (At least 200 Character feedback from each of them, Positive or negative feedback will not determine the marks but the quality of the feedback will) This question carry 2 Mark. 
