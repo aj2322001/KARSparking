@@ -38,7 +38,54 @@ Vivan Singh(+91 96028 83330): The app idea has potential if it is implemented pr
 ## Upload a Design Document File. This is part of above question.(You are supposed to upload a single file, If you have multiple files then merge them into a single file and then upload.) 
 
 ## Ethical and legal/privacy/terms and conditions 
-Actual Text of such issues that will be put before the user to agree. Please write minimum 5000 and maximum 10000 Characters. This Question Carries Three Mark.
+TERMS OF USE
+
+Last updated October 02, 2020
+
+
+
+AGREEMENT TO TERMS
+
+These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and KARS Parking ("Company", “we”, “us”, or “our”), concerning your access to and use of the ____ application as well as any other media form, media channel, mobile application or mobile application related, linked, or otherwise connected thereto (collectively, the “Application”). You agree that by accessing the Application, you have read, understood, and agreed to be bound by all of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE APPLICATION AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+
+Supplemental terms and conditions or documents that may be posted on the Application from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms of Use at any time and for any reason. We will alert you about any changes by updating the “Last updated” date of these Terms of Use, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Terms of Use to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms of Use by your continued use of the Application after the date such revised Terms of Use are posted.
+
+The information provided on the Application is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Application from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.
+
+The Application is intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Application. 
+
+USER REGISTRATION
+
+You may be required to register with the Application. You agree to keep your password confidential and will be responsible for all use of your account and password. We reserve the right to remove, reclaim, or change a username you select if we determine, in our sole discretion, that such username is inappropriate, obscene, or otherwise objectionable.
+
+MOBILE APPLICATION LICENSE
+
+Use License
+
+If you access the Application via a mobile application, then we grant you a revocable, non-exclusive, non-transferable, limited right to install and use the mobile application on wireless electronic devices owned or controlled by you, and to access and use the mobile application on such devices strictly in accordance with the terms and conditions of this mobile application license contained in these Terms of Use. You shall not: (1) decompile, reverse engineer, disassemble, attempt to derive the source code of, or decrypt the application; (2) make any modification, adaptation, improvement, enhancement, translation, or derivative work from the application; (3) violate any applicable laws, rules, or regulations in connection with your access or use of the application; (4) remove, alter, or obscure any proprietary notice (including any notice of copyright or trademark) posted by us or the licensors of the application; (5) use the application for any revenue generating endeavor, commercial enterprise, or other purpose for which it is not designed or intended; (6) make the application available over a network or other environment permitting access or use by multiple devices or users at the same time; (7) use the application for creating a product, service, or software that is, directly or indirectly, competitive with or in any way a substitute for the application; (8) use the application to send automated queries to any application or to send any unsolicited commercial e-mail; or (9) use any proprietary information or any of our interfaces or our other intellectual property in the design, development, manufacture, licensing, or distribution of any applications, accessories, or devices for use with the application.
+
+
+
+
+
+MISCELLANEOUS
+
+These Terms of Use and any policies or operating rules posted by us on the Application or in respect to the Application constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Use shall not operate as a waiver of such right or provision. These Terms of Use operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Terms of Use is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms of Use and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms of Use or use of the Application. You agree that these Terms of Use will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms of Use and the lack of signing by the parties hereto to execute these Terms of Use.
+
+
+CONTACT US 
+
+In order to resolve a complaint regarding the Application or to receive further information regarding use of the Application, please contact us at: 
+
+KARS Parking
+Bennett University, Greater Noida, U.P.
+Greater Noida, Uttar Pradesh 201310
+India
+Phone: ____
+e19cse155@bennett.edu.in
+e19cse123@bennett.edu.in
+e19cse267@bennett.edu.in
+e19cse180@bennett.edu.in
 
 ## feasibility study/ Business Context of the idea/ Monetization/ Opportunity Analysis 
 As we are developing a software-based application we will not be spending a large amount of money in the future also. Currently, we are in the developing stage of our project that is we don't have potential users, for now. So we don't have to spend money but when our application grows bigger and the number of users increases, there will be some nominal charges that we will have to pay. We would pay for the services like Google's database service i.e. firebase, Google Maps API. While publishing our application on Google play store we will have to pay some charges.
