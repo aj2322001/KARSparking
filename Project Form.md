@@ -141,7 +141,17 @@ final showcase of the project in December.Otherwise ,the project would be comple
 by the end of October or the first week of December.
 
 ## One Impressive Post on LinkedIn regarding your Project
-( At least 300 Characters and one Image and 5 hashtags).This Question Carries one Mark.
+Hello connections, I am very delighted to present to you our project's first look that I with my teammates are working on.
+
+As the population is increasing, the usage of vehicles is also increasing. Finding a car parking space especially during rush hours is the most difficult thing for drivers. Currently, most of the existing car parking spaces do not have a systematic system, they are manually managed and is a little inefficient.
+
+The idea behind our Android Application- “KARS Parking” is to help the users to find parking spaces where they will be able to view various parking areas, also they can select it to view whether a parking slot is available for booking or not. If the parking slot is available in parking then they can book it for some specific time slot also, this system provides an additional feature of canceling the bookings. It also utilizes the open ground for parking securely.
+With the “KARS Parking” app we are also releasing the “KARS master” app. Our aim is to provide a platform for the parking owners to list their plots and manage their services. It provides a variety of features to the user using which they can manage bookings, parking duration for the customer, analyze data, etc.
+
+ #android #Bennett #project #parking #KARS
+Dr. Tapas Badal
+Gaurav Singal
+posted by Archit (https://www.linkedin.com/posts/archit-joshi-364193194_android-bennett-project-activity-6716640254616576000-b3CH)
 
 ## Is your idea/Project/Product is applicable for patent? If Yes then, Why do you think it can be submitted for patent? How do you plan to proceed for Patent? (Even if your answer is no, explain why do you think it cannot be submitted for patent? (Minimum 300 characters maximum 1000, this question carry 1 Mark)
 
