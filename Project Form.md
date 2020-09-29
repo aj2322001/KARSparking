@@ -41,7 +41,14 @@ Vivan Singh(+91 96028 83330): The app idea has potential if it is implemented pr
 Actual Text of such issues that will be put before the user to agree. Please write minimum 5000 and maximum 10000 Characters. This Question Carries Three Mark.
 
 ## feasibility study/ Business Context of the idea/ Monetization/ Opportunity Analysis 
-Please write Minimum 1000 Maximum 2000 Characters. This Question Carries two Mark.
+As we are developing a software-based application we will not be spending a large amount of money in the future also. Currently, we are in the developing stage of our project that is we don't have potential users, for now. So we don't have to spend money but when our application grows bigger and the number of users increases, there will be some nominal charges that we will have to pay. We would pay for the services like Google's database service i.e. firebase, Google Maps API. While publishing our application on Google play store we will have to pay some charges.
+
+Our project focuses on the difficulty faced by vehicle owners while finding parking spaces and also the landowners who face difficulty managing the parking places. The thing that everyone knows but doesn't have the solution.
+This project is unique because it will help vehicle owners find parking spaces which they will be able to book instantly and landowners to use their vacant land to earn money and also manage it easily.
+
+After getting some potential users we will take a certain percentage of cut from the parking owners which will depend on their customer base, location, and other factors.
+
+Nowadays online payments are becoming popular among people as they are handy to use and secure, we are planning to introduce UPI payments in our application. We are planning to make our application useful to a wide range of people, so to do so we will try to update our application from time to time with new features.  
 
 ## Project cost estimation
 As we are in the developing stage of our semester project 'kars parking' which is only a software-based application, we do not have to spend money for now but when our application grows bigger and the number of users increases, there will be some nominal charges that the users will have to pay. The user would pay for the services like Google's database service i.e. firebase; we are using it for user's authentication and also for storing their data, Google Maps API for using google map in our application. While publishing our application on Google play store we will have to pay some charges.
