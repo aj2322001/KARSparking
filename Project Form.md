@@ -149,8 +149,10 @@ The idea behind our Android Application- “KARS Parking” is to help the users
 With the “KARS Parking” app we are also releasing the “KARS master” app. Our aim is to provide a platform for the parking owners to list their plots and manage their services. It provides a variety of features to the user using which they can manage bookings, parking duration for the customer, analyze data, etc.
 
  #android #Bennett #project #parking #KARS
-Dr. Tapas Badal
+ 
+Dr. Tapas Badal 
 Gaurav Singal
+
 posted by Archit (https://www.linkedin.com/posts/archit-joshi-364193194_android-bennett-project-activity-6716640254616576000-b3CH)
 
 ## Is your idea/Project/Product is applicable for patent? If Yes then, Why do you think it can be submitted for patent? How do you plan to proceed for Patent? (Even if your answer is no, explain why do you think it cannot be submitted for patent? (Minimum 300 characters maximum 1000, this question carry 1 Mark)
