@@ -218,7 +218,7 @@ Uday Agrawal(+91 93105 76691,UA7357@bennett.edu.in,UA7357): The idea is good but
 Vihan Tyagi(+91 9971240137,E17CSE135@bennett.edu.in,E17CSE135): The app idea is good, still many improvements can be made. The layouts of both the apps are fine, but if some animations are added then the apps will look more professional. I will give the apps a score of 7.
 
 ## Discuss your project with Two Persons outside the Bennett University (apart from your family members and preferably from industry.) and and ask them how they rate your project and its progress from 1 to 10 scale. Write both names, who they are, email and Mobile No of those. They should be ready to confirm if they are called on their mobile number.
-(1+1 mark for each of two).( At least 200 Characters feedback from each of them, Positive or negative feedback will not determine the marks but the quality of the feedback will)
+First, We discussed our project idea with our mentor Gaurav Singal(Faculty,gaurav.singal@bennett.edu.in,+91 94138 82576), sir. He appreciated our idea, told us that it has the potential to be a great project, and suggested to add some features that will make our project more presentable. He gave our project a score of 7. Then, we shared our project details with an industrialist currently working at JUSPAY Naman Kalkhuria(Industrialist,naman.kalkhuria@juspay.in,+91 95386 78178). his words on our project were "It's nice to know that students are coming up with these types of ideas, after seeing their prototype. I was really impressed, just stay dedicated and come up with the best you can. The layout and feel of the application can be improved" He gave our project a score of 7.5.
 
 ---
 
