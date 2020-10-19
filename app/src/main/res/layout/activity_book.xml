@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bookActivity">
+
+    <Button
+        android:id="@+id/conformBtn"
+        android:layout_width="179dp"
+        android:layout_height="43dp"
+        android:background="@drawable/custom_button_logsign"
+        android:text="Conform my Booking"
+        android:textColor="#F8F6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:transitionName="conformBtn"
+        app:layout_constraintTop_toBottomOf="@+id/mytxtVehicleNum" />
+
+    <TextView
+        android:id="@+id/txtDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="These Details Will be visible to Masters"
+        android:textAllCaps="false"
+        android:textColor="#001AA8"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/etName"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_name_icon"
+        android:drawableLeft="@drawable/custom_name_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:drawablePadding="12dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetail" />
+
+    <TextView
+        android:id="@+id/etPhone"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_phone_icon"
+        android:drawableLeft="@drawable/custom_phone_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Phone number"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="24sp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/custom_email_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="mail ID"
+        android:drawablePadding="12dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_address_icon"
+        android:drawableLeft="@drawable/custom_address_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="address"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="24sp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/txtVehicleType"
+        android:layout_width="112dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="40dp"
+        android:text="Vehicle Type : "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    <Spinner
+        android:id="@+id/spinnerVehicleTypeR"
+        android:layout_width="209dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:entries="@array/vehicleTypeArray"
+        android:gravity="center"
+        android:prompt="@string/select"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/txtVehicleType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/txtVehicleType"
+        app:layout_constraintTop_toTopOf="@+id/txtVehicleType"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/mytxtVehicleNum"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/custom_vehicle_num_icon"
+        android:gravity="center"
+        android:hint="vehicle Number"
+        android:textSize="24sp"
+        android:paddingLeft="15dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVehicleType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

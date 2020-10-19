@@ -1,12 +1,17 @@
 package com.example.karsparking;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +25,7 @@ public class Login extends AppCompatActivity {
 
     TextView emailtv,passwordtv,toSignuptv;
     Button loginbtn;
+    ImageView karsLoGo;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -33,6 +39,7 @@ public class Login extends AppCompatActivity {
         passwordtv = findViewById(R.id.tvPassward);
         loginbtn = findViewById(R.id.btnSignIn);
         toSignuptv= findViewById(R.id.tvSignUp);
+        karsLoGo= findViewById(R.id.imageView2);
 
         if(mFirebaseAuth.getCurrentUser() != null){
             startActivity(new Intent(Login.this, MainActivity.class));
@@ -94,11 +101,19 @@ public class Login extends AppCompatActivity {
         });
 
         toSignuptv.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View v) {
-                finish();
+//                finish();
                 Intent intSignUp = new Intent(Login.this, RegistrationScreen.class);
-                startActivity(intSignUp);
+
+                Pair[] pairsLog = new Pair[3];
+                pairsLog[0]= new Pair<View , String>(emailtv,"emailTrans");
+                pairsLog[1]= new Pair<View , String>(passwordtv,"passwordTrans");
+                pairsLog[2]= new Pair<View , String>(loginbtn,"logSignTrans");
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Login.this,pairsLog);
+                startActivity(intSignUp,options.toBundle());
+                finish();
             }
         });
     }

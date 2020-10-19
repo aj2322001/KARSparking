@@ -1,55 +1,53 @@
 package com.example.karsparking;
-import android.location.Address;
-import android.location.Criteria;
-import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationManager;
+
+import android.Manifest;
+import android.app.ActivityOptions;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentContainerView;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationCallback;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationResult;
-import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 
-import java.util.List;
+public class HomeFragment extends Fragment implements OnMapReadyCallback {
 
-import static android.content.Context.LOCATION_SERVICE;
-import static androidx.constraintlayout.widget.Constraints.TAG;
-
-public class HomeFragment extends Fragment implements OnMapReadyCallback{
-
-    private  View mView;
-    private static String latStr,lngStr;
+    private View mView;
+    private static String latStr, lngStr;
     private MapView mMapView;
     private static LatLng latLng;
     private GoogleMap mGoogleMap;
-    private static double latitude,longitude;
+    private static double latitude, longitude;
     private static final String MAPVIEW_BUNDLE_KEY = "MapViewBundleKey";
     private FusedLocationProviderClient fusedLocationProviderClient;
 
+    Button Book;
+//    FragmentContainerView fragHforBook;
+
     @Override
-    public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState){
-        mView = inflater.inflate(R.layout.fragment_home,container,false);
-        mMapView = (MapView) mView.findViewById(R.id.map);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        mView = inflater.inflate(R.layout.fragment_home, container, false);
+        mMapView = (MapView) mView.findViewById(R.id.map);    //imp
 
         initGoogleMap(savedInstanceState);
 
@@ -60,7 +58,37 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback{
         return mView;
     }
 
-    private void setCameraView(){
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        Book = mView.findViewById(R.id.book);
+        Book.setVisibility(View.VISIBLE);
+//        fragHforBook = mView.findViewById(R.id.fragment_container_home);
+//        fragHforBook.setVisibility(View.INVISIBLE);
+
+
+        Book.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View view) {
+//                Book.setVisibility(View.INVISIBLE);
+                Toast.makeText(getContext(),"you are booking",Toast.LENGTH_SHORT).show();
+//                fragHforBook.setVisibility(View.VISIBLE);
+//                FragmentTransaction ft = getChildFragmentManager().beginTransaction();
+//                bookFragment elf = new bookFragment();
+//                ft.replace(R.id.booking, elf);
+//                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+//                ft.addToBackStack(null);
+//                ft.commit();
+                Intent intent = new Intent(getActivity(), bookActivity.class);
+                Pair[] pairsCon = new Pair[1];
+                pairsCon[0]= new Pair<View , String>(Book,"conformBtn");
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(getActivity(),pairsCon);
+                startActivity(intent,options.toBundle());
+            }
+        });
+    }
+
+    private void setCameraView() {
 ////causing application to crash
 //        latitude = (Double)MainActivity.lat;
 //        longitude = (Double)MainActivity.lng;
@@ -70,15 +98,15 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback{
 //            mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,0));
 //        }
 //        else {
-            latLng = new LatLng(20.0507854,64.4174241);           //India's location
-            mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,0));
+        latLng = new LatLng(20.0507854, 64.4174241);           //India's location
+        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 0));
 //            target (latitude/longitude location), bearing, tilt, and zoom.
 //        }
 
     }
 
 
-    private void initGoogleMap(Bundle savedInstanceState){
+    private void initGoogleMap(Bundle savedInstanceState) {
         Bundle mapViewBundle = null;
         if (savedInstanceState != null) {
             mapViewBundle = savedInstanceState.getBundle(MAPVIEW_BUNDLE_KEY);
@@ -121,6 +149,16 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback{
 
     @Override
     public void onMapReady(GoogleMap map) {
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         map.setMyLocationEnabled(true);
         mGoogleMap = map;
         setCameraView();

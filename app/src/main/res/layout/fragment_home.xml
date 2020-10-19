@@ -3,19 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_dark"
     tools:context=".HomeFragment">
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="HOME fragment"-->
-<!--        android:textColor="@color/cardview_dark_background"-->
-<!--        android:layout_centerInParent="true"/>-->
 
     <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/map"/>
-    
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/map"
+        android:layout_alignBottom="@+id/map"
+        android:text="BOOK"
+        android:transitionName="conformBtn"
+        android:background="@drawable/custom_button_conform"
+        android:textColor="#F8F6F6"
+        android:layout_alignStart="@id/map" />
+
 </RelativeLayout>

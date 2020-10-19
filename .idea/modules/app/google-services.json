@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1059752089948",
+    "firebase_url": "https://kars-parking.firebaseio.com",
+    "project_id": "kars-parking",
+    "storage_bucket": "kars-parking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059752089948:android:2613f6e8c755a5dcb58999",
+        "android_client_info": {
+          "package_name": "com.example.karsparking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059752089948-1eftbal4rmibca2m0o7r8t3b91c4g6o6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karsparking",
+            "certificate_hash": "a15d279c3b5a85770de4d9ce6da5ef08381b76fe"
+          }
+        },
+        {
+          "client_id": "1059752089948-dt2c2v7adoi2pjn80mtik2peborhb2hh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karsparking",
+            "certificate_hash": "abd224d35bc1dd48b17a765209676401157dee01"
+          }
+        },
+        {
+          "client_id": "1059752089948-6ir2h0nffkhnmsuhc3be5afe658ck28b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrg2Hgir7KHlCBjM9aSb_xDmc5OFEUEL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059752089948-6ir2h0nffkhnmsuhc3be5afe658ck28b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

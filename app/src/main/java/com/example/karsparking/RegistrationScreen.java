@@ -1,9 +1,14 @@
 package com.example.karsparking;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -128,11 +133,18 @@ public class RegistrationScreen extends AppCompatActivity {
         });
 
         toSignIntv.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View v) {
+//                finish();
+                Intent intLogIn = new Intent(RegistrationScreen.this,Login.class);
+                Pair[] pairsReg = new Pair[3];
+                pairsReg[0]= new Pair<View , String>(emailet,"emailTrans");
+                pairsReg[1]= new Pair<View , String>(passwordet,"passwordTrans");
+                pairsReg[2]= new Pair<View , String>(btnSignUp,"logSignTrans");
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(RegistrationScreen.this,pairsReg);
+                startActivity(intLogIn,options.toBundle());
                 finish();
-                Intent i = new Intent(RegistrationScreen.this,Login.class);
-                startActivity(i);
             }
         });
     }

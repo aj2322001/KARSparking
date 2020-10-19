@@ -6,4 +6,6 @@
     <string name="navigation_drawer_close">close navigation drawer</string>
     <string name="title_activity_maps">Map</string>
     <string name="google_maps_key" translatable="false">AIzaSyBgEB8w0xz5NzKQ6Ufx0nW4R5H9dHe78zo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

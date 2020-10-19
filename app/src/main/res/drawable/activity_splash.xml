@@ -4,6 +4,7 @@
     <item android:drawable="@color/white"/>
     <item>
         <bitmap android:src="@drawable/karsicons"
+            android:transitionName="karsTrans"
             android:gravity="center" />
     </item>
 

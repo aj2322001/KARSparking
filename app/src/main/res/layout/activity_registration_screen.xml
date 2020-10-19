@@ -51,27 +51,19 @@
 
     <EditText
         android:id="@+id/etNameR"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_name_icon"
+        android:drawableLeft="@drawable/custom_name_icon"
         android:ems="10"
         android:hint="enter Name"
         android:inputType="textPersonName"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/nametv"
-        app:layout_constraintEnd_toStartOf="@+id/guideline11"
-        app:layout_constraintStart_toEndOf="@+id/nametv"
-        app:layout_constraintTop_toTopOf="@+id/nametv" />
-
-    <TextView
-        android:id="@+id/nametv"
-        android:layout_width="111dp"
-        android:layout_height="45dp"
-        android:height="45dp"
-        android:gravity="center"
-        android:text="NAME :"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:drawablePadding="12dp"
+        android:paddingLeft="15dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/guideline14" />
 
@@ -89,30 +81,24 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.30" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="111dp"
-        android:layout_height="45dp"
-        android:gravity="center"
-        android:text="e-mail :"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline16"
-        app:layout_constraintStart_toStartOf="@+id/guideline10"
-        app:layout_constraintTop_toTopOf="@+id/guideline15" />
-
     <EditText
         android:id="@+id/etEmailR"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawableLeft="@drawable/custom_email_icon"
         android:ems="10"
         android:hint="enter e-mail"
         android:inputType="textEmailAddress"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        android:paddingLeft="15dp"
+        android:drawablePadding="12dp"
+        android:transitionName="emailTrans"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
 
     <TextView
         android:id="@+id/tvVehicleType"
@@ -139,6 +125,7 @@
         android:layout_height="45dp"
         android:entries="@array/vehicleTypeArray"
         android:gravity="center"
+        android:background="@drawable/custom_input"
         android:prompt="@string/select"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="@+id/tvVehicleType"
@@ -153,30 +140,23 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.50" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="111dp"
-        android:layout_height="45dp"
-        android:gravity="center"
-        android:text="Vehicle Number Plate"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline13"
-        app:layout_constraintStart_toStartOf="@+id/guideline10"
-        app:layout_constraintTop_toTopOf="@+id/guideline17" />
-
     <EditText
         android:id="@+id/etVehicleNumberR"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_vehicle_num_icon"
+        android:drawableLeft="@drawable/custom_vehicle_num_icon"
         android:ems="10"
         android:hint="enter vehicle plate number"
         android:inputType="textCapSentences"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        android:drawablePadding="12dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toEndOf="@id/guideline11"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline18"
@@ -185,30 +165,23 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.6087551" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="130dp"
-        android:layout_height="45dp"
-        android:gravity="center"
-        android:text="Phone No.  :"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline18"
-        app:layout_constraintStart_toStartOf="@+id/guideline10"
-        app:layout_constraintTop_toTopOf="@+id/guideline13" />
-
     <EditText
         android:id="@+id/etPhoneNoR"
-        android:layout_width="281dp"
+        android:layout_width="350dp"
         android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_phone_icon"
+        android:drawableLeft="@drawable/custom_phone_icon"
         android:ems="10"
         android:hint="enter phone Number"
         android:inputType="phone"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        android:drawablePadding="12dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline19"
@@ -217,30 +190,23 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.70" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="111dp"
-        android:layout_height="45dp"
-        android:gravity="center"
-        android:text="Address :"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline19"
-        app:layout_constraintStart_toStartOf="@+id/guideline10"
-        app:layout_constraintTop_toTopOf="@+id/guideline18" />
-
     <EditText
         android:id="@+id/etAddressR"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_address_icon"
+        android:drawableLeft="@drawable/custom_address_icon"
         android:ems="10"
         android:hint="enter address"
         android:inputType="textPostalAddress"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        android:drawablePadding="12dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline19"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline18" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline20"
@@ -253,10 +219,15 @@
         android:id="@+id/etPasswordR"
         android:layout_width="205dp"
         android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/custom_password_icon"
         android:ems="10"
         android:hint="enter password"
         android:inputType="textPassword"
         android:textStyle="italic"
+        android:drawablePadding="10dp"
+        android:paddingLeft="12dp"
+        android:transitionName="passwordTrans"
         app:layout_constraintBottom_toTopOf="@+id/guideline20"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/guideline19" />
@@ -267,10 +238,15 @@
         android:layout_height="45dp"
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_pass_re_icon"
+        android:drawableLeft="@drawable/custom_pass_re_icon"
         android:ems="10"
         android:hint="password recheck"
         android:inputType="textPassword"
         android:textStyle="italic"
+        android:drawablePadding="10dp"
+        android:paddingLeft="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/etPasswordR"
         app:layout_constraintEnd_toEndOf="@id/guideline11"
         app:layout_constraintStart_toEndOf="@+id/etPasswordR"
@@ -288,6 +264,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign up"
+        android:textColor="#F8F6F6"
+        android:transitionName="logSignTrans"
+        android:background="@drawable/custom_button_logsign"
         app:layout_constraintBottom_toTopOf="@+id/guideline22"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
@@ -298,10 +277,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account? Sign in"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/guideline22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

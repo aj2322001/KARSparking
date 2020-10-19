@@ -3,15 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/background_dark">
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/signOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
-        android:background="#3F51B5"
+        android:background="@drawable/custom_button_logsign"
         android:text="signout"
         android:textAllCaps="false"
         android:textColor="#FCFCFD"
