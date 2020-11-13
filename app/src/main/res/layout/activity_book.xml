@@ -36,18 +36,19 @@
         android:id="@+id/etName"
         android:layout_width="350dp"
         android:layout_height="45dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_name_icon"
         android:drawableLeft="@drawable/custom_name_icon"
+        android:drawablePadding="12dp"
         android:ems="10"
         android:gravity="center"
         android:hint="name"
         android:inputType="textPersonName"
         android:paddingLeft="15dp"
-        android:drawablePadding="12dp"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDetail" />
 
@@ -119,21 +120,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
-    <Spinner
-        android:id="@+id/spinnerVehicleTypeR"
-        android:layout_width="209dp"
-        android:layout_height="45dp"
-        android:background="@drawable/custom_input"
-        android:entries="@array/vehicleTypeArray"
-        android:gravity="center"
-        android:prompt="@string/select"
-        android:spinnerMode="dropdown"
+    <TextView
+        android:id="@+id/txtVehicleTypeNum"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtVehicleType"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toEndOf="@+id/txtVehicleType"
-        app:layout_constraintTop_toTopOf="@+id/txtVehicleType"
-        app:layout_constraintVertical_bias="0.466" />
+        app:layout_constraintTop_toTopOf="@+id/txtVehicleType" />
 
     <TextView
         android:id="@+id/mytxtVehicleNum"

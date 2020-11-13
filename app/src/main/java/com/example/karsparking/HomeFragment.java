@@ -28,6 +28,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class HomeFragment extends Fragment implements OnMapReadyCallback {
@@ -61,7 +62,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         Book = mView.findViewById(R.id.book);
-        Book.setVisibility(View.VISIBLE);
+        Book.setVisibility(View.INVISIBLE);
 //        fragHforBook = mView.findViewById(R.id.fragment_container_home);
 //        fragHforBook.setVisibility(View.INVISIBLE);
 
@@ -207,6 +208,13 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
                         .position(new LatLng(loc[i][0],loc[i][1]))
                         .title(placeName[i]));
         }
+        map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                Book.setVisibility(View.VISIBLE);
+                return false;
+            }
+        });
     }
 
     @Override

@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -27,6 +28,7 @@ public class RegistrationScreen extends AppCompatActivity {
     Button btnSignUp;
     Spinner vehicleTypeS;
     FirebaseAuth mFirebaseAuth;
+    FirebaseUser user;
     FirebaseDatabase database;
     DatabaseReference myRef;
     String name, email,vehicleNumber,ph,address,pwd,pwdre,vehicleType;
@@ -38,6 +40,8 @@ public class RegistrationScreen extends AppCompatActivity {
         setContentView(R.layout.activity_registration_screen);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
+        user = mFirebaseAuth.getCurrentUser();      //////////////////////////////////
+
         nameet = findViewById(R.id.etNameR);
         emailet = findViewById(R.id.etEmailR);
         vehicleNoet = findViewById(R.id.etVehicleNumberR);
@@ -117,7 +121,8 @@ public class RegistrationScreen extends AppCompatActivity {
                                     data.setAddress(address);
                                     data.setVehicleType(vehicleType);
                                     data.setVehicleNumber(vehicleNumber);
-                                    myRef.push().setValue(data);
+//                                    myRef.push().setValue(data);
+                                    myRef.child(mFirebaseAuth.getCurrentUser().getUid()).setValue(data);
                                     finish();
                                     startActivity(new Intent(RegistrationScreen.this, MainActivity.class));
                                 } else {

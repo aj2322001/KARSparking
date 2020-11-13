@@ -9,7 +9,7 @@
         android:id="@+id/signOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="160dp"
         android:background="@drawable/custom_button_logsign"
         android:text="signout"
         android:textAllCaps="false"
@@ -17,9 +17,38 @@
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/SetPro"
+        android:layout_width="350dp"
+        android:layout_height="91dp"
+        android:hint="profile"
+        android:background="@drawable/profile_btn"
+
+        android:drawableStart="@drawable/profile_icon"
+        android:drawableLeft="@drawable/profile_icon"
+        android:drawablePadding="12dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/signOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="contact us through\nkarsparking@gmail.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signOut"
+        app:layout_constraintVertical_bias="0.839" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
