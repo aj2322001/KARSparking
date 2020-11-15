@@ -3,12 +3,15 @@ package com.example.karsparking;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -19,11 +22,19 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
 public class bookActivity extends AppCompatActivity {
     Button conform;
-    String name,email,address,ph,Vnum,Vtype;
+    String name,email,address,ph,Vnum,Vtype,currentTime,timeSel;
     String TAG = "Booking";
     TextView nametv,phonetv,emailtv,addresstv,vehicleNumtv,vehicleTypetv;
+    TimePickerDialog picker;
+    TextView timetv;
 
     private String userID;
 
@@ -38,7 +49,9 @@ public class bookActivity extends AppCompatActivity {
         addresstv = findViewById(R.id.editTextTextPersonName4);
         vehicleNumtv = findViewById(R.id.mytxtVehicleNum);
         vehicleTypetv = findViewById(R.id.txtVehicleTypeNum);
+        timetv = findViewById(R.id.bookTime);
 //////////////////
+//        currentTime = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date());
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myReff = database.getReference();
@@ -69,7 +82,24 @@ public class bookActivity extends AppCompatActivity {
 
             }
         });
-
+        timetv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Calendar cldr = Calendar.getInstance();
+                int hour = cldr.get(Calendar.HOUR_OF_DAY);
+                int minutes = cldr.get(Calendar.MINUTE);
+                // time picker dialog
+                picker = new TimePickerDialog(bookActivity.this,
+                        new TimePickerDialog.OnTimeSetListener() {
+                            @Override
+                            public void onTimeSet(TimePicker tp, int sHour, int sMinute) {
+                                timeSel = sHour + ":" + sMinute;
+                                timetv.setText(timeSel);
+                            }
+                        }, hour, minutes, true);
+                picker.show();
+            }
+        });
 
         conform = findViewById(R.id.conformBtn);
         conform.setOnClickListener(new View.OnClickListener() {
